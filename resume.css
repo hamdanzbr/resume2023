@@ -1,246 +1,607 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap');
 
- * {
-     margin: 0;
-     padding: 0;
-     font-family: 'Roboto Condensed', sans-serif;
-     
-     
- }
+* {
 
- .container {
-     position: relative;
-     width: 100%;
-     height: 100vh;
-     /* 1VH=1% */
-     background-color: white;
- }
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 
- nav {
-     display: flex;
-     width: 85%;
-     margin-left: 100px;
-     align-items: center;
-     justify-content: space-between;
-     background-color: yellowgreen;
- }
 
- nav .logo {
-     width: 100px;
-     border-radius: 50%; 
- }
 
- nav ul li {
-     display: inline-block;
-     margin: 10px 20px;
- }
 
- nav ul li a {
-     text-decoration: none;
-     color: black;
-     font-weight: bold;
- }
+}
 
- /* psudo class:to get special effects on mouse over
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* 1VH=1% */
+  background-color: #383838;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkseagreen;
+}
+
+nav .logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* psudo class:to get special effects on mouse over
 
     selector:psuedo-class-name{property:value}*/
- nav ul li a:hover {
-     color: white;
- }
+nav ul li a:hover {
+  color: white;
+}
 
- .title {
-     margin-left: 8%;
-     margin-top: 13%;
- }
 
- .title h1 {
-     font-size: 50px;
-     color: black;
-     margin-bottom: 20px;
- }
+.title {
+  margin-left: 08%;
+  margin-top: 10%;
 
- .title span {
-     color: yellowgreen;
- }
 
- .title p {
-     color: #555;
-     line-height: 30px;
- }
+}
 
- .title a {
-     background-color: black;
-     padding: 10px 18px;
-     text-decoration: none;
-     color: white;
-     font-weight: bold;
-     display: inline-block;
-     margin: 30px 0px;
-     border-radius: 20px;
- }
+.title .name {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #333, 2px 2px 0;
+  /* Create a 3D shadow effect */
+  transform: perspective(50px) rotateX(1deg);
+  /* Apply a perspective and rotation */
+}
 
- .images {
-     width: 45%;
-     height: 80%;
-     position: absolute;
-     right: 30px;
-     bottom: 0px;
- }
+#addressing {
+  color: darkseagreen;
+}
 
- .images img {
-     margin-top: 10px;
- }
+.intro ::first-letter {
+  color: red;
+}
 
- #about {
-    margin-right: 8%;
-    margin-top: 13%;
-    margin-left: 8%;
- }
- .heading {
-    text-align: center;
- }
- .heading h2{
-    font-size: 40px;
- }
- .heading span {
+
+
+.title h1 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+
+
+}
+
+
+.title span {
+  color: red;
+
+}
+
+.field {
+  color: darkseagreen;
+}
+
+.title p {
+  color: #ebc0c0;
+  line-height: 30px;
+}
+
+.title a {
+  background-color: darkseagreen;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 20px;
+
+}
+
+.title a:hover {
+  color: white;
+}
+
+
+.heading {
+  text-align: center;
+  margin-bottom: 2%;
+
+}
+
+.heading h2 {
+  font-size: 40px;
+  color: darkseagreen;
+}
+
+.heading span {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+
+.images img {
+  width: 50%;
+  height: 300px;
+  margin-left: 200px;
+  margin-top: -200px;
+  
+}
+
+#about {
+  margin-right: 8%;
+  margin-top: 13%;
+  margin-left: 8%;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-img img {
+  width: 40%;
+  height: 60%;
+  border-radius: 30px;
+  margin-left: 200px;
+}
+
+.about-text {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 25px;
+  color: blanchedalmond;
+}
+
+.information {
+  margin: 1rem 0 1.4rem;
+}
+
+.information .info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info-box i {
+  color: green;
+}
+
+.information .info-box span {
+
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+
+#skills {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.skill-container {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+
+  justify-content: center;
+
+}
+
+.bar {
+  display: flex;
+  gap: 4rem;
+  border: 4px yellow;
+}
+
+
+.progress-htmlcircle {
+  width: 100px;
+  height: 100px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+  /* Adjust the spacing between circles */
+  border: 20rem;
+}
+.progress-csscircle {
+  width: 100px;
+  height: 100px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+  /* Adjust the spacing between circles */
+  border: 20rem;
+}
+.progress-jscircle {
+  width: 100px;
+  height: 100px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+  /* Adjust the spacing between circles */
+  border: 20rem;
+}
+.progress-reactcircle {
+  width: 100px;
+  height: 100px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+  /* Adjust the spacing between circles */
+  border: 20rem;
+}
+.progress-angcircle {
+  width: 100px;
+  height: 100px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+  /* Adjust the spacing between circles */
+  border: 20rem;
+}
+
+
+.html {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  transform: rotate(144deg);
+  transform-origin: center;
+}
+
+.css {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  transform: rotate(145.8deg);
+  transform-origin: center;
+}
+
+.js {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  transform: rotate(138.6deg);
+  transform-origin: center;
+}
+
+.react {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  transform: rotate(127.8deg);
+  transform-origin: center;
+}
+.angular {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  transform: rotate(127.8deg);
+  transform-origin: center;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.language {
+  text-align: center;
+  color: burlywood;
+}
+
+.skill-img img {
+  width: 60%;
+  object-position: center;
+  padding-left: 3rem;
+
+}
+
+#contact {
+  background-color: black;
+  padding: 20px;
+}
+
+.icondiv {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  color: black;
+  background-color: yellowgreen;
+}
+
+.icon i {
+  font-size: 20px;
+  color: black;
+
+}
+
+.icon i:hover {
+  color: black;
+}
+
+footer {
+  margin-top: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+@media screen and (max-width: 848px) {
+  .container {
+    width: 100%;
+    background-color: #383838;
+  }
+  .container nav {
+    height: 40px;
+  }
+
+  .container .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container a {
+    font-size: 10px;
+  }
+
+  #home .name h1 {
     font-size: 25px;
-    color: green;
- }
- .about-content {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
- }
- .about-img img {
-    width: 70%;
-    border-radius: 10px;
- }
- .about-text{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0.7px 0.6px 0 #333, 1.3px 1.3px 0;
+    transform: perspective(25px) rotateX(0, 5deg);
+
+
+  }
+  
+
+  #home h3 {
+    font-size: 12px;
+  }
+
+  #home p {
+    font-size: 8px;
+    line-height: 0.30cm;
+  }
+
+  #home .images {
+    top: 13%;
+    right: 120px;
+    
+  }
+
+  #home .images img {
+    width: 50%;
+    height: 120px;
+    
+  }
+
+  .about h2{
+   font-size: 25px;
+  }
+  .about span{
+    font-size: 15px;
+  }
+
+  .about .about-text p{
+    font-size: 10px;
+    line-height: 0.5cm;
+  }
+
+  .about .information span  {
+    font-size: 10px;
+  }
+
+
+  .about .about-img img {
+    
+    width: 90%;
+    height: 200px;
+    margin-left: 0.5%;
+    margin-top: 40px;
+  }
+  .skills h2{
+    font-size: 25px;
+  }
+  .skills span {
+    font-size: 15px;
+  }
+  .skills .skill-container .bar{
+    margin-left: 190px;
+    margin-top: 20px;
+  }
+
+  
+
+  .skills .skill-container .progress-htmlcircle {
+    width: 35px;
+    height: 35px;
+    right: 40px;
+  }
+  .skills .skill-container .progress-csscircle {
+    width: 35px;
+    height: 35px;
+    bottom: -79px;
+    right: 70px;
+  }
+  .skills .skill-container .progress-jscircle {
+    width: 35px;
+    height: 35px;
+    right: 50px;
+  }
+  .skills .skill-container .progress-reactcircle {
+    width: 35px;
+    height: 35px;
+    bottom: -80px;
+    right: 130px;
+
+  }
+  .skills .skill-container .progress-angcircle {
+    width: 35px;
+    height: 35px;
+    bottom: -0px;
+    right: 210px;
+
+  }
+  
+
+  .skills .bar .progress-text{
+    font-size: 8px;
+  }
+  .skills .skill-container .bar h2{
+    font-size: 8px;
+    margin-bottom: 200px;
+  }
+  .skills .bar{
+    gap: 0;
+  }
+  .skills .skill-img {
+    margin-left: -150px;
+  }
+
+  #contact h2{
+    font-size: 25px;
+  }
+  #contact span{
+    font-size: 15px;
+  }
+  #contact .icondiv .icon{
+    width: 25px;
+    height: 25px;
+  }
+  #contact footer{
+    font-size: 10px;
+  }
+
+  
+
+
+
+
+  
+
+
+
+
+}
+
+
+@media screen and (max-width:300px) {
+  
+
+  .container{
+    width: 100%;
+  }
+
+  .container nav{
+    height: 30px;
+  }
+  .container .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .container a {
+    font-size: 5px;
+  }
+
+  #home{
+    
+    line-height: 4px;
+    margin-top: 50px;
+  }
+
+  #home .name h1 {
     font-size: 18px;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 25px;
- }
- .information{
-    margin: 1rem 0  1.4rem;
- }
- .information .info-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
- }
- .information .info-box span {
+    line-height: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0.7px 0.6px 0 #333, 1.3px 1.3px 0;
+    transform: perspective(25px) rotateX(0, 5deg);
 
-    font-weight: 500;
-    margin-left: 15px;
- }
 
- #skills {
-    margin-left: 8%;
-    margin-top: 13%;
-    margin-right: 8%;
- }
- .skill-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2rem;
- }
- .skill-img img {
-    width: 60%;
-    object-position: center;
-    padding-left: 3rem;
+  }
+  
+
+  #home h3 {
+    font-size: 8px;
+  }
+
+  #home p {
+    font-size: 5px;
+    line-height: 0.30cm;
+  }
+  #home .images {
+    top: 13%;
+    right: 170px;
     
- }
- .bar-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  }
+
+  #home .images img {
+    width: 50%;
+    height: 120px;
     
- }
- .bar-box h3 {
-    font-size: 25px;
-    font-weight: 800;
- }
- .bar-box span {
-    font-size: 23px;
-    font-weight: 700;
- }
- .light-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: black;
-    border-radius: 8px;
- }
- .percent-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: green;
-    border-radius: 8px;
- }
- .html-bar {
-    width: 74%;
- }
- .js-bar {
-    width: 55%;
- }
- .css-bar {
-    width: 65%;
- }
- .angular-bar {
-    width: 59%;
- }
- .C-bar {
-    width: 52%;
- }
- #contact {
-   margin-left: 8%;
-   margin-top: 13%;
-   margin-right: 8%;
- }
- .icondiv {
-   margin-top: 5%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- .icon {
-   width: 50px;
-   height: 50px;
-   border: 2px solid;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 0 10px;
-   color: black;
-   background-color: yellowgreen;
- }
- .icon i {
-   font-size: 20px;
-   color: black;
-   
- }
- .icon i:hover {
-   color: black;
- }
- footer {
-   margin-top: 2rem;
-   font-weight: bolder;
- }
- .field {
-    font-size: medium;
-    margin-left: 55px;
-    margin-top: -10px;
- }
- 
- 
+  }
+  
+}
 
